@@ -2,19 +2,24 @@ import React, { useState } from "react";
 import Building from "./Building";
 
 export default function Solve() {
+  const bluePaint =
+    "repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)";
+  const orangePaint =
+    "repeating-linear-gradient(to bottom, transparent, transparent 5px, #FF9B00 5px, #FF9B00 10px), repeating-linear-gradient(to right, #A28A61, #A28A61 5px, #FF9B00 5px, #FF9B00 10px)";
+
   const [buildings, setBuildings] = useState([
-    { height: 1, color: "green" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" },
-    { height: 1, color: "gray" }
+    { height: 1, color: orangePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint },
+    { height: 1, color: bluePaint }
   ]);
 
   const handleChangeBuildingHeight = (index, height) => {
-    if (height > 10) {
+    if (height >= 10) {
       height = 10;
     }
     if (height < 0) {
@@ -24,7 +29,7 @@ export default function Solve() {
     newArr[index].height = height;
     newArr.forEach((building, i) => {
       const hasView = checkView(i, building.height);
-      building.color = hasView ? "green" : "gray";
+      building.color = hasView ? orangePaint : bluePaint;
     });
     setBuildings((prev) => {
       return newArr;

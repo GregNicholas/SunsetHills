@@ -5,12 +5,10 @@ export default function Building({
   bldgNum,
   handleChangeBuildingHeight
 }) {
-  //const [enteredHeight, setEnteredHeight] = useState(1);
-  //const [buildingHeight, setBuildingHeight] = `${enteredHeight * 50}px`;
-
   const bldgStyle = {
     height: `${bldgStats.height * 50}px`,
-    backgroundColor: `${bldgStats.color}`,
+    backgroundImage: `${bldgStats.color}`,
+    //backgroundImage: "repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)",
     position: "absolute",
     bottom: "2rem",
     left: `${bldgNum * 60 + 100}px`
