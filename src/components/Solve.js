@@ -19,14 +19,15 @@ export default function Solve() {
   ]);
 
   const handleChangeBuildingHeight = (index, height) => {
-    if (height >= 10) {
-      height = 10;
+    let bHeight = height;
+    if (bHeight >= 10) {
+      bHeight = 10;
     }
-    if (height < 0) {
-      height = 0;
+    if (bHeight < 0) {
+      bHeight = 0;
     }
     const newArr = [...buildings];
-    newArr[index].height = height;
+    newArr[index].height = bHeight;
     newArr.forEach((building, i) => {
       const hasView = checkView(i, building.height);
       building.color = hasView ? orangePaint : bluePaint;
