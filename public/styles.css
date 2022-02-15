@@ -1,0 +1,45 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  padding: 70px 0 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  border: 1px solid red;
+  align-items: flex-center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
+}
+.header-inner {
+  width: 95%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: start;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: white;
+  text-decoration: none !important;
+}
