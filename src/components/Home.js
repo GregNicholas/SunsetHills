@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <div
       className="container home"
-      style={{ backgroundImage: `url(${background})`, backgroundSize: "cover" }}
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover"
+      }}
     >
       Home
     </div>
