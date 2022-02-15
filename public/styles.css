@@ -19,14 +19,15 @@ body {
 }
 
 header {
+  z-index: 1;
   position: fixed;
   top: 0;
   height: 70px;
   width: 100%;
+  padding-left: 1.5rem;
   display: flex;
-  border: 1px solid red;
   align-items: flex-center;
-  justify-content: center;
+  margin-left: 1.5px;
   box-shadow: 1px 1px 1px 1px rgba(116, 110, 110, 0.199);
 }
 .header-inner {
@@ -35,7 +36,7 @@ header {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .nav-link {
