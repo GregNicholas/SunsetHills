@@ -64,6 +64,7 @@ export default function Solve() {
         {buildings.map((building, i) => {
           return (
             <Building
+              key={i}
               bldgStats={building}
               bldgNum={i}
               handleChangeBuildingHeight={handleChangeBuildingHeight}

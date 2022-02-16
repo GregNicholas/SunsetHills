@@ -11,7 +11,7 @@ export default function Home() {
         backgroundPosition: "center"
       }}
     >
-      <div class="home_info">
+      <div className="home_info">
         <h1>Sunset Hills</h1>
         <div className="holder clip">
           <div className="circle"></div>
