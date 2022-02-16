@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import background from "../images/skyscraper-row.jpeg";
 
 export default function Home() {
@@ -19,7 +20,11 @@ export default function Home() {
         </div>
         <p style={{ top: "35%" }}>
           Enter numbers to represent building heights, and buildings that can
-          see the sunset will be displayed in green.
+          see the sunset will be displayed in green. Click{" "}
+          <Link to="Solve" style={{ color: "white" }}>
+            Solve
+          </Link>{" "}
+          to see it in action.
         </p>
       </div>
     </div>

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Building from "./Building";
 
 export default function Solve() {
+  const [width, setWidth] = useState(window.innerWidth);
+
   const bluePaint =
     "repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)";
   const orangePaint =
@@ -17,6 +19,20 @@ export default function Solve() {
     { height: 1, color: bluePaint },
     { height: 1, color: bluePaint }
   ]);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [setWidth]);
 
   const handleChangeBuildingHeight = (index, height) => {
     let bHeight = height;
@@ -65,6 +81,7 @@ export default function Solve() {
           return (
             <Building
               key={i}
+              windowWidth={width}
               bldgStats={building}
               bldgNum={i}
               handleChangeBuildingHeight={handleChangeBuildingHeight}
