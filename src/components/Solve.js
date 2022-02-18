@@ -75,8 +75,9 @@ export default function Solve() {
       </div>
       <p>
         Enter values representing height units of each buildings. Buildings that
-        can see the sunset to the west from the roof will be colored orange.
-        Change any value and see them update in real time.
+        are taller than those in front of it and can see the sunset to the west
+        from the roof will be colored orange. Change any value and see them
+        update in real time.
       </p>
       <div className="sun"></div>
       <section className="buildings">

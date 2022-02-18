@@ -199,7 +199,7 @@ footer p {
   border-radius: 50%;
   box-shadow: 0 0 40px 40px yellow;
   position: absolute;
-  bottom: 2rem;
+  bottom: 3rem;
   left: -20px;
 }
 
@@ -208,7 +208,7 @@ footer p {
     width: 25px;
     height: 25px;
     box-shadow: 0 0 20px 28px yellow;
-    bottom: 2.5rem;
+    bottom: 3rem;
     left: -20px;
   }
 }
