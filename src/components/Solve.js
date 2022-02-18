@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Building from "./Building";
-import Footer from "./Footer";
 
 export default function Solve() {
   const [width, setWidth] = useState(window.innerWidth);
