@@ -15,7 +15,7 @@ export default function Building({
 
   console.log(leftPosition);
   const bldgStyle = {
-    height: `${bldgStats.height * 40}px`,
+    height: `${bldgStats.height * 50}px`,
     backgroundImage: `${bldgStats.color}`,
     //backgroundImage: "repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)",
     position: "absolute",
