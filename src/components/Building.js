@@ -7,19 +7,19 @@ export default function Building({
   handleChangeBuildingHeight
 }) {
   let leftPosition;
-  if (windowWidth > 500) {
-    leftPosition = (windowWidth / 9) * bldgNum + 40;
+  if (windowWidth > 550) {
+    leftPosition = (windowWidth / 11) * bldgNum + 160;
   } else {
-    leftPosition = (windowWidth / 9) * bldgNum + 15;
+    leftPosition = (windowWidth / 10) * bldgNum + 50;
   }
 
   console.log(leftPosition);
   const bldgStyle = {
-    height: `${bldgStats.height * 50}px`,
+    height: `${bldgStats.height * 40}px`,
     backgroundImage: `${bldgStats.color}`,
     //backgroundImage: "repeating-linear-gradient(to bottom, transparent, transparent 5px, #28487d 5px, #28487d 10px), repeating-linear-gradient(to right, #617ca2, #617ca2 5px, #28487d 5px, #28487d 10px)",
     position: "absolute",
-    bottom: "2rem",
+    bottom: "4rem",
     left: `${leftPosition}px`
   };
   return (

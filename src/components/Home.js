@@ -19,8 +19,9 @@ export default function Home() {
           <div className="circle circle2"></div>
         </div>
         <p style={{ top: "35%" }}>
-          Enter numbers to represent building heights, and buildings that can
-          see the sunset will be displayed in green. Click{" "}
+          Visual demonstration of working with an array. A row of buildings
+          representing an array will be colored according to whether they have a
+          view of the sunset to the west. Click{" "}
           <Link to="Solve" style={{ color: "white" }}>
             Solve
           </Link>{" "}

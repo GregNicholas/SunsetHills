@@ -3,6 +3,7 @@ import React from "react";
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Solve from "./components/Solve";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/solve" element={<Solve />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

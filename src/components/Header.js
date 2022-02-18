@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -12,7 +12,7 @@ export default function Header() {
           Solve
         </Link>
         <a
-          href="https://github.com"
+          href="https://github.com/GregNicholas/SunsetHills"
           target="_blank"
           rel="noreferrer"
           className="nav-link"

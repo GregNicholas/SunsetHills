@@ -152,6 +152,22 @@ input {
   box-sizing: border-box;
 }
 
+footer {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(lightgreen, darkgreen);
+  color: white;
+  display: flex;
+}
+
+footer p {
+  text-align: right;
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 500px) {
   h1 {
     font-size: 3rem;
@@ -168,5 +184,26 @@ input {
 @media only screen and (min-width: 768px) {
   .home_info {
     margin-top: 8rem;
+  }
+}
+
+.sun {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 40px yellow;
+  position: absolute;
+  bottom: 2rem;
+  left: -20px;
+}
+
+@media only screen and (max-width: 550px) {
+  .sun {
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 20px 28px yellow;
+    bottom: 2.5rem;
+    left: -20px;
   }
 }

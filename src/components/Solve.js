@@ -73,9 +73,11 @@ export default function Solve() {
         <div className="circle circle2"></div>
       </div>
       <p>
-        A row of buildings with heights of entered values will check if they
-        have clear views of the sunset to the west
+        Enter values representing height units of each buildings. Buildings that
+        can see the sunset to the west from the roof will be colored orange.
+        Change any value and see them update in real time.
       </p>
+      <div className="sun"></div>
       <section className="buildings">
         {buildings.map((building, i) => {
           return (
