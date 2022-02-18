@@ -50,9 +50,15 @@ header {
   cursor: pointer;
   color: white;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.75em;
+}
+
+.active {
   text-decoration: underline;
   text-underline-offset: 0.75em;
 }
@@ -158,7 +164,6 @@ footer {
   bottom: 0;
   height: 4rem;
   width: 100%;
-  background: linear-gradient(lightgreen, darkgreen);
   color: white;
   display: flex;
 }
