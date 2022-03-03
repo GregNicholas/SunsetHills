@@ -8,13 +8,16 @@ Given an array of numbers, which elements in the array are greater than all that
 
 This can be shown as an array of buildings with their heights. The buildings will be represented on the screen. The buildings that are taller than all of those to the "west" are said to have a view of the sunset. Those buildings will be colored orange.
 
-The user can enter heights for each building and watch the picture change with each entry change.
+This small project demonstrates working with an array and displays the results in a visual form. The app is a somewhat "gamified" version of an array problem.
 
-This small project works with an array and displays the results in a visual form. The app is a somewhat "gamified" version of an array problem.
+## To use
+On the main page, click "solve" in the navbar.
+
+Enter heights in the input for each building and watch the picture change with each entry change.
 
 ### Links
 
-- Live Site URL: [Job listings](https://csb-sunset-hills.netlify.app/)
+- Live Site URL: [Sunset Hills](https://csb-sunset-hills.netlify.app/)
 
 ### Built with
 
